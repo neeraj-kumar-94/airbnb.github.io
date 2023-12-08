@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
-    <!-- google font link  -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"> -->
+    <!-- google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+    <!-- splider slider cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <!-- Font awesome kit -->
     <script src="https://kit.fontawesome.com/cd7b12aee3.js" crossorigin="anonymous"></script>
     <!-- link css file -->
     <link rel="stylesheet" href="style.css" />
+    <!-- link Responsive css file -->
+    <link rel="stylesheet" href="responsive.css" />
     <title>Airbnb</title>
 </head>
 <body>
@@ -29,21 +35,218 @@
                 <div class="nav-items">
                     <a href="#">Airbnb your home</a>
                 </div>
-                <div class="nav-items">
-                    <i class="fa-solid fa-globe"></i>
+                <div class="web-icon">
+                    <i class="fa-solid fa-globe w-icon"></i>
                 </div>
-                <div class="nav-items">
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-circle-user"></i>
+                <div class="user-humburger-icon">
+                    <i class="humb-icon fa-solid fa-bars"></i>
+                    <i class="user-icon fa-solid fa-circle-user"></i>
                 </div>
             </div>
         </div>
     </div>
     <div class="layout-container">
         <div class="layout">
-            
+            <div class="multiple-icon-btn-contaner">
+                <div class="splide icon-container ">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide link-btn" data-card="c-c-1">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/1.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn" data-card="c-c-2">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/2.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Earth homes</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn" data-card="c-c-3">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/14.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn" data-card="c-c-4">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/3.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/4.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/5.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/6.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/7.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/8.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/9.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/10.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/11.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/12.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/13.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/15.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>
+                            <div class="splide__slide link-btn">
+                                <div class="link-btn-img">
+                                    <img src="./images/top-im/16.jpg" alt="">
+                                </div>
+                                <div class="link-btn-name">
+                                    <span>Caves</span>
+                                </div>
+                                <div class="btn-line"></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-btn">
+                    <span><i class="fa-solid fa-sliders"></i></span>
+                    <p>Filters</p>
+                </div>
+                <div class="toggle-btn">
+                    <p>Display total before taxes</p>
+                    <button class="toggle_b">
+                        <div class="toggle-on-of">
+                            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="cards-container" id="c-c-1">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/card1/1.webp" alt="">
+                        <div class="card-heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div> 
+                    <div class="card-content">
+                        <p>Pharog, India</p>
+                        <span>293 Kilometers away</span>
+                        <span>5 nights.8-13Dec</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-container" id="c-c-2">
+                <div class="card">
+                    <h1>card 2</h1>
+                </div>
+            </div>
+            <div class="cards-container" id="c-c-3">
+                <div class="card">
+                    <h1>card 3</h1>
+                </div>
+            </div>
+            <div class="cards-container" id="c-c-4">
+                <div class="card">
+                    <h1>card 4</h1>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- splider slider cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    
     <!-- link JavaScript file -->
     <script src="script.js"></script>
 </body>

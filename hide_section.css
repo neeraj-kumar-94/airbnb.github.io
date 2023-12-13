@@ -8,7 +8,7 @@
 
 /* hide section */
 
-.user-humburger-icon .login-signup-hc-etc{
+.login-signup-hc-etc{
     position: absolute;
     top: 70px;
     right: 100px;
@@ -21,7 +21,7 @@
     display: none;
 }
 
-.active .user-humburger-icon .login-signup-hc-etc {
+.active .login-signup-hc-etc {
     display: block;
 }
 

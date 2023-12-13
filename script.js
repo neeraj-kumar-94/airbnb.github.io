@@ -4,7 +4,7 @@
 let userSec = document.querySelector(".user-humburger-icon");
 
 userSec.addEventListener("click", () => {
-  loginSignup.classList.toggle("active");
+  userSec.classList.toggle("active");
 });
 
 

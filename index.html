@@ -8,12 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
-    <!-- splider slider cdn -->
+    <!-- slider css cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <!-- Font awesome kit -->
     <script src="https://kit.fontawesome.com/cd7b12aee3.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- link css file -->
     <link rel="stylesheet" href="style.css" />
+    <!-- link hide content css file -->
+    <link rel="stylesheet" href="hide_section.css" />
     <!-- link Responsive css file -->
     <link rel="stylesheet" href="responsive.css" />
     <title>Airbnb</title>
@@ -23,7 +27,7 @@
         <div class="nav-material">
             <div class="airbnb-logo">
                 <img src="./images/icon.png" alt="">
-                <img src="./images/logo.png" alt="">
+                <img class="airbnb-sec-logo" src="./images/logo.png" alt="">
             </div>
             <div class="nav-three-btn">
                 <div class="nav-btn">Anywhere</div>
@@ -41,6 +45,19 @@
                 <div class="user-humburger-icon">
                     <i class="humb-icon fa-solid fa-bars"></i>
                     <i class="user-icon fa-solid fa-circle-user"></i>
+                    <div class="login-signup-hc-etc">
+                        <div class="winter-r-n">
+                            <a href="#">Winter Release Features <span>NEW</span></a>
+                        </div>
+                        <div class="l-s-btn">
+                            <button class="login-btn">Sign up</button>
+                            <button class="signup-btn">Log in</button>
+                        </div>
+                        <div class="airbn-home-help-c">
+                            <a href="#">Airbnb your home</a>
+                            <a href="#">Help Center</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,155 +65,155 @@
     <div class="layout-container">
         <div class="layout">
             <div class="multiple-icon-btn-contaner">
-                <div class="splide icon-container ">
-                    <div class="splide__track">
-                        <div class="splide__list">
-                            <div class="splide__slide link-btn" data-card="c-c-1">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/1.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                <div class="icon-container">
+                    <div class="icon"><i id="left" class="fa-solid fa-angle-left"></i></div>
+                    <div class="all-link-btns">
+                        <div class="link-btn" data-card="c-c-1">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/1.jpg" alt="">
                             </div>
-                            <div class="splide__slide link-btn" data-card="c-c-2">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/2.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Earth homes</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
                             </div>
-                            <div class="splide__slide link-btn" data-card="c-c-3">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/14.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn" data-card="c-c-2">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/2.jpg" alt="">
                             </div>
-                            <div class="splide__slide link-btn" data-card="c-c-4">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/3.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="link-btn-name">
+                                <span >Caves</span>
                             </div>
-                            <div class="splide__slide link-btn">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/4.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn" data-card="c-c-3">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/14.jpg" alt="">
                             </div>
-                            <div class="splide__slide link-btn">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/5.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
                             </div>
-                            <div class="splide__slide link-btn">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/6.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn" data-card="c-c-4">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/3.jpg" alt="">
                             </div>
-                            <div class="splide__slide link-btn">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/7.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
                             </div>
-                            <div class="splide__slide link-btn">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/8.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/4.jpg" alt="">
                             </div>
-                            <div class="splide__slide link-btn">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/9.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
                             </div>
-                            <div class="splide__slide link-btn">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/10.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/5.jpg" alt="">
                             </div>
-                            <div class="splide__slide link-btn">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/11.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
                             </div>
-                            <div class="splide__slide link-btn">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/12.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/6.jpg" alt="">
                             </div>
-                            <div class="splide__slide link-btn">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/13.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
                             </div>
-                            <div class="splide__slide link-btn">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/15.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/7.jpg" alt="">
                             </div>
-                            <div class="splide__slide link-btn">
-                                <div class="link-btn-img">
-                                    <img src="./images/top-im/16.jpg" alt="">
-                                </div>
-                                <div class="link-btn-name">
-                                    <span>Caves</span>
-                                </div>
-                                <div class="btn-line"></div>
-                            </div>                            
+                            <div class="link-btn-name">
+                                <span>Caves</span>
+                            </div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/8.jpg" alt="">
+                            </div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
+                            </div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/9.jpg" alt="">
+                            </div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
+                            </div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/10.jpg" alt="">
+                            </div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
+                            </div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/11.jpg" alt="">
+                            </div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
+                            </div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/12.jpg" alt="">
+                            </div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
+                            </div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/13.jpg" alt="">
+                            </div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
+                            </div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/15.jpg" alt="">
+                            </div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
+                            </div>
+                            <div class="btn-line"></div>
+                        </div>
+                        <div class="link-btn">
+                            <div class="link-btn-img">
+                                <img src="./images/top-im/16.jpg" alt="">
+                            </div>
+                            <div class="link-btn-name">
+                                <span>Caves</span>
+                            </div>
+                            <div class="btn-line"></div>
                         </div>
                     </div>
+                    <div class="icon"><i id="right" class="fa-solid fa-angle-right"></i></div>
                 </div>
                 <div class="filter-btn">
                     <span><i class="fa-solid fa-sliders"></i></span>
@@ -212,13 +229,45 @@
                 </div>
             </div>
             <div class="cards-container" id="c-c-1">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./images/card1/1.webp" alt="">
-                        <div class="card-heart">
-                            <i class="fa-regular fa-heart"></i>
+               <div class="inner-cards-container">
+                 <!-- card a-1 -->
+                 <div class="card">
+                    <div class="splide" id="splide_a1">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/1.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/2.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/3.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                            </div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="card-content">
                         <p>Pharog, India</p>
                         <span>293 Kilometers away</span>
@@ -226,16 +275,915 @@
                         <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
                     </div>
                 </div>
+                <!-- card a-2 -->
+                <div class="card">
+                    <div class="splide" id="splide_a2">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/1.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/2.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/3.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Pharog, India</p>
+                        <span>293 Kilometers away</span>
+                        <span>5 nights.8-13Dec</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                    </div>
+                </div>
+                <!-- card a-3 -->
+                <div class="card">
+                    <div class="splide" id="splide_a3">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/1.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/2.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/3.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Pharog, India</p>
+                        <span>293 Kilometers away</span>
+                        <span>5 nights.8-13Dec</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                    </div>
+                </div>
+                <!-- card a-4 -->
+                <div class="card">
+                    <div class="splide" id="splide_a4">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/1.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/2.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/3.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Pharog, India</p>
+                        <span>293 Kilometers away</span>
+                        <span>5 nights.8-13Dec</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                    </div>
+                </div>
+                <!-- card a-5 -->
+                <div class="card">
+                    <div class="splide" id="splide_a5">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/1.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/2.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/3.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Pharog, India</p>
+                        <span>293 Kilometers away</span>
+                        <span>5 nights.8-13Dec</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                    </div>
+                </div>
+                <!-- card a-6 -->
+                <div class="card">
+                    <div class="splide" id="splide_a6">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/1.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/2.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/3.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Pharog, India</p>
+                        <span>293 Kilometers away</span>
+                        <span>5 nights.8-13Dec</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                    </div>
+                </div>
+                <!-- card a-7 -->
+                <div class="card">
+                    <div class="splide" id="splide_a7">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/1.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/2.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/3.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                                <div class="splide__slide card-image">
+                                    <img src="./images/card1/4.webp" alt="">
+                                    <div class="card-heart">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Pharog, India</p>
+                        <span>293 Kilometers away</span>
+                        <span>5 nights.8-13Dec</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                    </div>
+                </div>
+               </div>
             </div>
             <div class="cards-container" id="c-c-2">
-                <div class="card">
-                    <h1>card 2</h1>
-                </div>
+                <div class="inner-cards-container">
+                    <!-- card b-1 -->
+                    <div class="card">
+                       <div class="splide" id="splide_b1">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="https://a0.muscache.com/im/pictures/miso/Hosting-5264493/original/10d2c21f-84c2-46c5-b20b-b51d1c2c971a.jpeg?im_w=720" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                   <!-- card b-2 -->
+                   <div class="card">
+                       <div class="splide" id="splide_b2">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/1.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                   <!-- card b-3 -->
+                   <div class="card">
+                       <div class="splide" id="splide_b3">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/1.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                   <!-- card b-4 -->
+                   <div class="card">
+                       <div class="splide" id="splide_b4">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/1.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                   <!-- card b-5 -->
+                   <div class="card">
+                       <div class="splide" id="splide_b5">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/1.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                   <!-- card b-6 -->
+                   <div class="card">
+                       <div class="splide" id="splide_b6">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/1.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                   <!-- card b-7 -->
+                   <div class="card">
+                       <div class="splide" id="splide_b7">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/1.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                  </div>
             </div>
             <div class="cards-container" id="c-c-3">
-                <div class="card">
-                    <h1>card 3</h1>
-                </div>
+                <div class="inner-cards-container">
+                    <!-- card c-1 -->
+                    <div class="card">
+                       <div class="splide" id="splide_c1">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="https://a0.muscache.com/im/pictures/9da940a2-82d0-4efc-808e-381292ac5321.jpg?im_w=720" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                   <!-- card c-2 -->
+                   <div class="card">
+                       <div class="splide" id="splide_c2">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/1.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                   <!-- card c-3 -->
+                   <div class="card">
+                       <div class="splide" id="splide_c3">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/1.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                   <!-- card c-4 -->
+                   <div class="card">
+                       <div class="splide" id="splide_c4">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/1.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                   <!-- card c-5 -->
+                   <div class="card">
+                       <div class="splide" id="splide_c5">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/1.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                   <!-- card c-6 -->
+                   <div class="card">
+                       <div class="splide" id="splide_c6">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/1.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                   <!-- card c-7 -->
+                   <div class="card">
+                       <div class="splide" id="splide_c7">
+                           <div class="splide__track">
+                               <div class="splide__list">
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/1.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/2.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/3.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                                   <div class="splide__slide card-image">
+                                       <img src="./images/card1/4.webp" alt="">
+                                       <div class="card-heart">
+                                           <i class="fa-regular fa-heart"></i>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <p>Pharog, India</p>
+                           <span>293 Kilometers away</span>
+                           <span>5 nights.8-13Dec</span>
+                           <p><i class="fa-solid fa-indian-rupee-sign"></i> 35,371 total before all taxes</p>
+                       </div>
+                   </div>
+                  </div>
             </div>
             <div class="cards-container" id="c-c-4">
                 <div class="card">

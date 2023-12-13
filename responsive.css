@@ -1,6 +1,48 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
 }
 
+/* logo hide */
+@media (max-width: 1120px){
+    .airbnb-logo .airbnb-sec-logo{
+        display: none;
+    }
+}
+
+/* cards container media query
+============================== */
+
+@media (max-width: 1880px){
+    .inner-cards-container{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1640px){
+    .inner-cards-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1128px){
+    .inner-cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 950px){
+    .inner-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px){
+    .inner-cards-container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+        column-gap: 0px;
+    }
+}

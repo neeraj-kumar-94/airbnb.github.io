@@ -1,25 +1,58 @@
-// top icon slide 
-var splide = new Splide(".splide", {
-  perPage: 13,
-  rewind: false,
-  loop: false,
-  pagination: false,
-  drag: true,
-  snap: true,
-  breakpoints: {
-    1700: {
-      perPage: 10,
-    },
-    1500: {
-      perPage: 8,
-    },
-    1200: {
-      perPage: 4,
-    },
-  },
+// login and signup button 
+// ============================
+
+let userSec = document.querySelector(".user-humburger-icon");
+
+userSec.addEventListener("click", () => {
+  loginSignup.classList.toggle("active");
 });
 
-splide.mount();
+
+// top link buttons
+// =-=-=-=-=-=-=-=-=-=-=
+const buttonContainer = document.querySelector(".all-link-btns"),
+allLinkButton = buttonContainer.querySelectorAll(".link-btn"),
+arrowIcons = document.querySelectorAll(".icon i");
+
+let isDragging = false;
+
+const handleIcons = (scrollVal) => {
+    let maxScrollableWidth = buttonContainer.scrollWidth - buttonContainer.clientWidth;
+    arrowIcons[0].parentElement.style.display = scrollVal <= 0 ? "none" : "flex";
+    arrowIcons[1].parentElement.style.display = maxScrollableWidth - scrollVal <= 1 ? "none" : "flex";
+}
+
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        // if clicked icon is left, reduce 350 from buttonContainer scrollLeft else add
+        let scrollWidth = buttonContainer.scrollLeft += icon.id === "left" ? -340 : 340;
+        handleIcons(scrollWidth);
+    });
+});
+
+// allLinkButton.forEach(tab => {
+//     tab.addEventListener("click", () => {
+//         buttonContainer.querySelector(".active").classList.remove("active");
+//         tab.classList.add("active");
+//     });
+// });
+
+const dragging = (e) => {
+    if(!isDragging) return;
+    buttonContainer.classList.add("dragging");
+    buttonContainer.scrollLeft -= e.movementX;
+    handleIcons(buttonContainer.scrollLeft)
+}
+
+const dragStop = () => {
+    isDragging = false;
+    buttonContainer.classList.remove("dragging");
+}
+
+buttonContainer.addEventListener("mousedown", () => isDragging = true);
+buttonContainer.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+
 
 
 // toggle button
@@ -61,5 +94,89 @@ for (let i = 0; i < CardLink.length; i++) {
   
 }
 
-
 document.querySelector(".link-btn").click();
+
+
+
+
+// =======================
+// A Cards slider 
+// =======================
+
+var splide = new Splide( '#splide_a1' );
+splide.mount();
+
+
+var splide = new Splide( '#splide_a2' );
+splide.mount();
+
+var splide = new Splide( '#splide_a3' );
+splide.mount();
+
+var splide = new Splide( '#splide_a4' );
+splide.mount();
+
+var splide = new Splide( '#splide_a5' );
+splide.mount();
+
+var splide = new Splide( '#splide_a6' );
+splide.mount();
+
+var splide = new Splide( '#splide_a7' );
+splide.mount();
+
+
+// =======================
+// B Cards slider 
+// =======================
+
+var splide = new Splide( '#splide_b1' );
+splide.mount();
+
+
+var splide = new Splide( '#splide_b2' );
+splide.mount();
+
+var splide = new Splide( '#splide_b3' );
+splide.mount();
+
+var splide = new Splide( '#splide_b4' );
+splide.mount();
+
+var splide = new Splide( '#splide_b5' );
+splide.mount();
+
+var splide = new Splide( '#splide_b6' );
+splide.mount();
+
+var splide = new Splide( '#splide_b7' );
+splide.mount();
+
+
+
+// =======================
+// C Cards slider 
+// =======================
+
+var splide = new Splide( '#splide_c1' );
+splide.mount();
+
+
+var splide = new Splide( '#splide_c2' );
+splide.mount();
+
+var splide = new Splide( '#splide_c3' );
+splide.mount();
+
+var splide = new Splide( '#splide_c4' );
+splide.mount();
+
+var splide = new Splide( '#splide_c5' );
+splide.mount();
+
+var splide = new Splide( '#splide_c6' );
+splide.mount();
+
+var splide = new Splide( '#splide_c7' );
+splide.mount();
+

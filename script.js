@@ -180,3 +180,34 @@ splide.mount();
 var splide = new Splide( '#splide_c7' );
 splide.mount();
 
+
+// =======================
+//  Footer tabs
+// =======================
+
+let footerBtns = document.querySelectorAll(".f-btn");
+
+for (let i = 0; i < footerBtns.length; i++) {
+  footerBtns[i].addEventListener("click", function () {
+
+    let fBtnId = this.dataset.tabs;
+    let btnAllId = document.getElementById(fBtnId);
+    let allHideFooterTabs = document.querySelectorAll(".footer-tab-links-parent");
+    let allHideFooterButtons = document.querySelectorAll(".f-btn");
+
+    for(let j = 0; j < allHideFooterTabs.length; j++){
+      allHideFooterTabs[j].style.display = "none";
+    }
+
+    for(let k = 0; k < allHideFooterButtons.length; k++){
+      allHideFooterButtons[k].classList.remove("active");
+    }
+
+    btnAllId.style.display = "block";
+    this.classList.add("active");
+    
+  })
+  
+}
+
+document.querySelector(".f-btn").click();

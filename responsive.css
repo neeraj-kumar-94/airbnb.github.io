@@ -46,3 +46,13 @@
         column-gap: 0px;
     }
 }
+
+
+/* Footer links
+============================== */
+
+@media (max-width: 1128px){
+    .footer-tab-links{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

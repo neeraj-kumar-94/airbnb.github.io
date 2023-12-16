@@ -211,3 +211,150 @@ for (let i = 0; i < footerBtns.length; i++) {
 }
 
 document.querySelector(".f-btn").click();
+
+
+
+/* Footer Show more btn a
+=========================== */
+
+let showMorebtnA = document.querySelector("#f-s-m-btn-a");
+let tabContainer = document.querySelector(".footer-tab-links");
+
+showMorebtnA.addEventListener("click", function () {
+  // let allFLinks = document.querySelectorAll(".footer-hide-link");
+  
+  tabContainer.classList.toggle("active");
+
+  if(showMorebtnA.style.display != "none"){
+    showMorebtnA.style.display = "none"
+  }
+
+  
+});
+
+
+/* Footer Show more btn b
+=========================== */
+
+let showMorebtnB = document.querySelector("#f-s-m-btn-b");
+let tabContainerb = document.querySelector("#f-t-b");
+
+showMorebtnB.addEventListener("click", function () {
+  
+  tabContainerb.classList.toggle("active");
+
+  if(showMorebtnB.style.display != "none"){
+    showMorebtnB.style.display = "none"
+  }
+
+  
+});
+
+
+
+/* Footer Show more btn c
+=========================== */
+
+let showMorebtnC = document.querySelector("#f-s-m-btn-c");
+let tabContainerbC = document.querySelector("#f-t-c");
+
+showMorebtnC.addEventListener("click", function () {
+  
+  tabContainerbC.classList.toggle("active");
+
+  if(showMorebtnC.style.display != "none"){
+    showMorebtnC.style.display = "none"
+  }
+
+  
+});
+
+
+/* Footer Show more btn d
+=========================== */
+
+let showMorebtnD = document.querySelector("#f-s-m-btn-d");
+let tabContainerbD = document.querySelector("#f-t-d");
+
+showMorebtnD.addEventListener("click", function () {
+  
+  tabContainerbD.classList.toggle("active");
+
+  if(showMorebtnD.style.display != "none"){
+    showMorebtnD.style.display = "none"
+  }
+
+  
+});
+
+
+/* Footer Show more btn e
+=========================== */
+
+let showMorebtnE = document.querySelector("#f-s-m-btn-e");
+let tabContainerbE = document.querySelector("#f-t-e");
+
+showMorebtnE.addEventListener("click", function () {
+  
+  tabContainerbE.classList.toggle("active");
+
+  if(showMorebtnE.style.display != "none"){
+    showMorebtnE.style.display = "none"
+  }
+
+  
+});
+
+/* Footer Show more btn f
+=========================== */
+
+let showMorebtnF = document.querySelector("#f-s-m-btn-f");
+let tabContainerbF = document.querySelector("#f-t-f");
+
+showMorebtnF.addEventListener("click", function () {
+  
+  tabContainerbF.classList.toggle("active");
+
+  if(showMorebtnF.style.display != "none"){
+    showMorebtnF.style.display = "none"
+  }
+
+  
+});
+
+
+/* Footer Show more btn g
+=========================== */
+
+let showMorebtnG = document.querySelector("#f-s-m-btn-g");
+let tabContainerbG = document.querySelector("#f-t-g");
+
+showMorebtnG.addEventListener("click", function () {
+  
+  tabContainerbG.classList.toggle("active");
+
+  if(showMorebtnG.style.display != "none"){
+    showMorebtnG.style.display = "none"
+  }
+
+  
+});
+
+
+
+/* Footer Show more btn h
+=========================== */
+
+let showMorebtnH = document.querySelector("#f-s-m-btn-h");
+let tabContainerbH = document.querySelector("#f-t-h");
+
+showMorebtnH.addEventListener("click", function () {
+  
+  tabContainerbH.classList.toggle("active");
+
+  if(showMorebtnH.style.display != "none"){
+    showMorebtnH.style.display = "none"
+  }
+
+  
+});

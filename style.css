@@ -513,10 +513,10 @@ html {
 
 .footer {
     width: 100%;
-    height: 1000px;
     background-color: var(--hover-first-color);
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .footer .footer-material{
@@ -611,6 +611,16 @@ html {
     line-height: 20px;
 }
 
+/* Hide links */
+
+.footer-hide-link{
+    display: none;
+}
+
+.active .footer-hide-link{
+    display: block;
+}
+
 .footer-country-name a span:first-child{
     color: var(--secondry-color);
 }
@@ -625,20 +635,101 @@ html {
 
 
 .footer-three-sect{
-    border-top: 1px solid red;
-    width: 100%;
-    height: 4px;
-}
-
-
-/* .footer {
     width: 100%;
     background-color: var(--hover-first-color);
     display: flex;
     justify-content: center;
 }
 
-.footer .footer-material{
+.footer-th-inner-sec{
     width: 90.89%;
-    padding: 50px 0;
-} */
+    padding: 50px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-th-inner-sec .footer-sec-content{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(1,200px);
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 258px;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 0 0 50px 0;
+}
+
+.sha-content{
+    list-style-type: none;
+}
+
+.sha-content li{
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.sha-content li:first-child{
+    font-size: var(--para-font);
+    font-weight: bold;
+    color: var(--secondry-color);
+}
+
+.sha-content li a{
+    text-decoration: none;
+    font-size: var(--para-font);
+    font-weight: normal;
+    color: var(--secondry-color);
+} 
+
+.sha-content li a:hover{
+    text-decoration: underline;
+}
+
+/* footer copy right section */
+
+.footer-th-inner-sec .footer-copyright-sec{
+     width: 100%;
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 24px 0;
+}
+
+.copyright-content{
+    display: flex;
+    list-style-type: none;
+}
+
+.copyright-content li{
+    margin-right: 15px;
+}
+
+.copyright-content li:last-child{
+    margin: 0;
+}
+
+.copyright-content li a,i{
+    text-decoration: none;
+    font-size: var(--para-font);
+    font-weight: normal;
+    color: var(--secondry-color);
+}
+
+.copyright-content li a:hover{
+    text-decoration: underline;
+}
+
+.copyright-content li button,span{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: var(--para-font);
+    font-weight: normal;
+    color: var(--secondry-color);
+}
+
+.copyright-content li a .fa-brands{
+    font-size: 20px;
+    margin-left: 10px;
+}
+

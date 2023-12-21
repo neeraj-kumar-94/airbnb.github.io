@@ -162,18 +162,24 @@ html {
 }
 
 .multiple-icon-btn-contaner {
-    width: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.multiple-icon-btn-child{
+    width: 90.89%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 14px;
 }
 
 .icon-container {
-    padding: 10px 35px 0 35px;
     position: relative;
     overflow-x: hidden;
-    height: 90px;
+    overflow-y: hidden;
+    height: 78px;
     width: auto;
     background: #fff;
     border-radius: 13px;
@@ -183,7 +189,7 @@ html {
     position: absolute;
     top: 0;
     height: 100%;
-    width: 90px;
+    width: 50px;
     display: flex;
     align-items: center;
 }
@@ -191,11 +197,12 @@ html {
 .icon-container .all-link-btns {
     width: 100%;
     display: flex;
-    gap: 40px;
+    gap: 36px;
     overflow-x: hidden;
     scroll-behavior: smooth;
     overflow-y: hidden;
     user-select: none;
+    margin-top: 5px;
 }
 
 .all-link-btns.dragging {
@@ -210,7 +217,6 @@ html {
 
 .all-link-btns .link-btn {
     height: 78px;
-    padding: 0 10px;
     white-space: nowrap;
     display: flex;
     justify-content: space-evenly;
@@ -223,22 +229,30 @@ html {
 .link-btn .link-btn-img img {
     width: 24px;
     height: 24px;
-    opacity: .8;
+    opacity: .5;
+}
+
+.link-btn.active .link-btn-img img{
+    opacity: 1;
 }
 
 .link-btn .link-btn-name span {
     font-size: var(--para-small-font);
-    font-weight: bold;
-    line-height: 16px;
+    font-weight: normal;
     color: var(--icon-para-color);
 }
 
+.link-btn.active .link-btn-name span {
+    color: var(--secondry-color);
+}
+
 .btn-line {
-    width: 90%;
+    width: 100%;
     height: 2px;
     transition: var(--transition-pro);
     background-color: var(--primary-color);
     border-radius: 2px;
+    margin: 5px 0 0 0;
     opacity: 0;
 }
 
@@ -255,13 +269,16 @@ html {
 .icon:first-child {
     left: 0;
     display: none;
-    background: linear-gradient(90deg, #fff 40%, transparent);
+    /* background: linear-gradient(90deg, #fff 70%, transparent); */
+    background-color: #fff;
+    z-index: 1;
 }
 
 .icon:last-child {
     right: 0;
     justify-content: flex-end;
-    background: linear-gradient(-90deg, #fff 40%, transparent);
+    background-color: #fff;
+    /* background: linear-gradient(-90deg, #fff 70%, transparent); */
 }
 
 .icon i {
@@ -273,7 +290,6 @@ html {
     line-height: 38px;
     border-radius: 50%;
     border: 1px solid var(--primary-color);
-
 }
 
 .icon i:hover {
@@ -427,18 +443,25 @@ html {
 }
 
 .splide__arrow{
-    opacity: 0;
-    font-size: 14px;
+    opacity: 1;
+    font-size: 12px;
     background-color: #f1f1f1;
 }
 
-.splide:hover .splide__arrow{
+/* .splide:hover .splide__arrow{
+    opacity: 1;
+} */
+
+.splide__arrow--prev {
+    opacity: .5;
+}
+
+.splide:hover .splide__arrow--prev {
     opacity: 1;
 }
 
-
 .splide__arrow--next {
-    opacity: 0;
+    opacity: .5;
 }
 
 .splide:hover .splide__arrow--next{
@@ -462,7 +485,7 @@ html {
 .card .card-content p {
     font-size: var(--para-font);
     color: var(--secondry-color);
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .card .card-content span {
@@ -531,30 +554,54 @@ html {
     margin: 0 0 10px 0;
 }
 
-.footer-tab-btns{
+.footer-tab-btns-parent{
     width: 100%;
     height: 50px;
+    position: relative;
+    
+}
+
+.footer-tab-btns{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
     border-bottom: 1px solid var(--primary-color);
+    overflow: hidden;
+    scroll-behavior: auto;
+    cursor: grab;
 }
 
-.footer-tab-btns .f-btn{
+.footer-tab-btns.dragging{
+    scroll-behavior: smooth;
+    cursor: grab;
+}
+
+.footer-tab-btns.dragging .f-btn{
+    user-select: none;
+    pointer-events: none;
+}
+
+.btns_cont{
+    width: 100%;
+}
+
+.f-btn{
     width: auto;
-    height: 100%;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin-right: 26px;
+    margin-right: 20px;
     white-space: nowrap;
 }
 
-.footer-tab-btns .f-btn button{
+.f-btn button{
     font-size: var(--para-font);
     color: var(--icon-para-color);
-    font-weight: bold;
+    font-weight: normal;
     background-color: transparent;
     border: none;
     padding: 10px 0 0 0;
@@ -562,6 +609,7 @@ html {
 
 .f-btn.active  button{
     color: var(--secondry-color);
+    font-weight: bold;
 }
 
 .f-btn .f-b-line{
@@ -580,6 +628,31 @@ html {
 .f-btn.active .f-b-line{
     opacity: 1;
     background-color: var(--secondry-color);   
+}
+
+/* footer arrow buttons */
+
+.footer-tab-btns-parent .f-icon{
+    width: 50px;
+    height: 50px;
+    background-color: var(--hover-first-color);
+    padding: 14px 16px;
+}
+
+.footer-tab-btns-parent .f-icon:first-child{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.footer-tab-btns-parent .f-icon:last-child{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    display: none;
 }
 
 /* tab links 
@@ -607,8 +680,12 @@ html {
 .footer-country-name a span{
     display: block;
     font-size: var(--para-font);
-    font-weight: 500;
+    font-weight: normal;
     line-height: 20px;
+}
+
+.footer-show-more-btn{
+    cursor: pointer;
 }
 
 /* Hide links */
@@ -631,7 +708,7 @@ html {
 
 
 /* Footer three section support, hosting and airbnb
-======================================== */
+==================================================== */
 
 
 .footer-three-sect{
@@ -703,6 +780,7 @@ html {
 .copyright-content li{
     margin-right: 15px;
 }
+
 
 .copyright-content li:last-child{
     margin: 0;

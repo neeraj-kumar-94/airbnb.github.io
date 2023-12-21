@@ -76,6 +76,17 @@
     }
 }
 
+@media (max-width: 840px){
+    .footer-tab-btns{
+        width: 95%;
+        height: 100%;
+    }
+    
+    
+    .footer-tab-btns-parent .f-icon:last-child{
+        display: block;
+    }
+}
 
 
 /* Footer three section
@@ -125,6 +136,10 @@
         width: 100%;
         text-align: center;
         padding: 0 0 10px 0;
+    }
+
+    .copyright-content .f-hide-decimal{
+        display: none;
     }
     
 }

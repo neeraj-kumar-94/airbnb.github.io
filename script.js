@@ -7,6 +7,21 @@ userSec.addEventListener("click", () => {
   userSec.classList.toggle("active");
 });
 
+// hide login and signup section
+// ===============================
+
+let userSecbutton = document.querySelector("#login-signup-popup");
+let loginSignHideSec = document.querySelector("#login-sign-hide-sec");
+let lSignCross = document.querySelector("#l-s-cross");
+
+userSecbutton.onclick = function (){
+  loginSignHideSec.style.display = "block";
+}
+
+lSignCross.onclick = function (){
+  loginSignHideSec.style.display = "none";
+}
+
 
 // top link buttons
 // =-=-=-=-=-=-=-=-=-=-=
@@ -103,26 +118,40 @@ document.querySelector(".link-btn").click();
 // A Cards slider 
 // =======================
 
-var splide = new Splide( '#splide_a1' );
+var splide = new Splide( '#splide_a1',{
+  pagination: false,
+});
 splide.mount();
 
 
-var splide = new Splide( '#splide_a2' );
+var splide = new Splide( '#splide_a2' ,{
+  pagination: false,
+});
 splide.mount();
 
-var splide = new Splide( '#splide_a3' );
+var splide = new Splide( '#splide_a3' ,{
+  pagination: false,
+});
 splide.mount();
 
-var splide = new Splide( '#splide_a4' );
+var splide = new Splide( '#splide_a4' ,{
+  pagination: false,
+});
 splide.mount();
 
-var splide = new Splide( '#splide_a5' );
+var splide = new Splide( '#splide_a5',{
+  pagination: false,
+} );
 splide.mount();
 
-var splide = new Splide( '#splide_a6' );
+var splide = new Splide( '#splide_a6' ,{
+  pagination: false,
+});
 splide.mount();
 
-var splide = new Splide( '#splide_a7' );
+var splide = new Splide( '#splide_a7' ,{
+  pagination: false,
+});
 splide.mount();
 
 
@@ -130,26 +159,39 @@ splide.mount();
 // B Cards slider 
 // =======================
 
-var splide = new Splide( '#splide_b1' );
+var splide = new Splide( '#splide_b1',{
+  pagination: false,
+});
 splide.mount();
 
-
-var splide = new Splide( '#splide_b2' );
+var splide = new Splide( '#splide_b2',{
+  pagination: false,
+});
 splide.mount();
 
-var splide = new Splide( '#splide_b3' );
+var splide = new Splide( '#splide_b3',{
+  pagination: false,
+});
 splide.mount();
 
-var splide = new Splide( '#splide_b4' );
+var splide = new Splide( '#splide_b4',{
+  pagination: false,
+});
 splide.mount();
 
-var splide = new Splide( '#splide_b5' );
+var splide = new Splide( '#splide_b5',{
+  pagination: false,
+});
 splide.mount();
 
-var splide = new Splide( '#splide_b6' );
+var splide = new Splide( '#splide_b6',{
+  pagination: false,
+});
 splide.mount();
 
-var splide = new Splide( '#splide_b7' );
+var splide = new Splide( '#splide_b7',{
+  pagination: false,
+});
 splide.mount();
 
 
@@ -165,19 +207,29 @@ splide.mount();
 var splide = new Splide( '#splide_c2' );
 splide.mount();
 
-var splide = new Splide( '#splide_c3' );
+var splide = new Splide( '#splide_c3',{
+  pagination: false,
+});
 splide.mount();
 
-var splide = new Splide( '#splide_c4' );
+var splide = new Splide( '#splide_c4',{
+  pagination: false,
+});
 splide.mount();
 
-var splide = new Splide( '#splide_c5' );
+var splide = new Splide( '#splide_c5',{
+  pagination: false,
+});
 splide.mount();
 
-var splide = new Splide( '#splide_c6' );
+var splide = new Splide( '#splide_c6',{
+  pagination: false,
+});
 splide.mount();
 
-var splide = new Splide( '#splide_c7' );
+var splide = new Splide( '#splide_c7',{
+  pagination: false,
+});
 splide.mount();
 
 
@@ -221,7 +273,6 @@ let showMorebtnA = document.querySelector("#f-s-m-btn-a");
 let tabContainer = document.querySelector(".footer-tab-links");
 
 showMorebtnA.addEventListener("click", function () {
-  // let allFLinks = document.querySelectorAll(".footer-hide-link");
   
   tabContainer.classList.toggle("active");
 
@@ -358,3 +409,44 @@ showMorebtnH.addEventListener("click", function () {
 
   
 });
+
+
+
+/* Footer tab slider
+=================== */
+const tabButtonContainer = document.querySelector(".footer-tab-btns"),
+allTabLinkButton = tabButtonContainer.querySelectorAll(".f-btn"),
+footerArrowIcons = document.querySelectorAll(".f-icon i");
+
+let footerIsDragging = false;
+
+const footerHandleIcons = (scrollVal) => {
+    let maxScrollableWidth = tabButtonContainer.scrollWidth - tabButtonContainer.clientWidth;
+    footerArrowIcons[0].parentElement.style.display = scrollVal <= 0 ? "none" : "flex";
+    footerArrowIcons[1].parentElement.style.display = maxScrollableWidth - scrollVal <= 1 ? "none" : "flex";
+}
+
+footerArrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let scrollWidth = tabButtonContainer.scrollLeft += icon.id === "left-ar" ? -340 : 340;
+        footerHandleIcons(scrollWidth);
+    });
+});
+
+const footerDragging = (e) => {
+    if(!footerIsDragging) return;
+    tabButtonContainer.classList.add("footerDragging");
+    tabButtonContainer.scrollLeft -= e.movementX;
+    footerHandleIcons(tabButtonContainer.scrollLeft)
+}
+
+const footerDragStop = () => {
+    footerIsDragging = false;
+    tabButtonContainer.classList.remove("footerDragging");
+}
+
+tabButtonContainer.addEventListener("mousedown", () => footerIsDragging = true);
+tabButtonContainer.addEventListener("mousemove", footerDragging);
+document.addEventListener("mouseup", footerDragStop);
+
+

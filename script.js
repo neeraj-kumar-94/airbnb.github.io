@@ -154,6 +154,102 @@ var splide = new Splide( '#splide_a7' ,{
 });
 splide.mount();
 
+var splide = new Splide( '#splide_a8' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a9' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a10' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a11' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a12' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a13' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a14' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a15' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a16' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a17' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a18' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a19' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a20' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a21' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a22' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a23' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a24' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a25' ,{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_a26' ,{
+  pagination: false,
+});
+splide.mount();
+
+
 
 // =======================
 // B Cards slider 

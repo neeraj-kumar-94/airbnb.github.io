@@ -13,6 +13,7 @@
 .nav-search-bar-container{
     width: 100%;
     height: 54px;
+    display: none;
 }
 
 .nav-search-bar-container .nav-search-bar-child{

@@ -6,6 +6,75 @@
 }
 
 
+
+/* hide search bar width below 780px 
+======================================*/
+
+.nav-search-bar-container{
+    width: 100%;
+    height: 54px;
+}
+
+.nav-search-bar-container .nav-search-bar-child{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-search-bar-child .nav-search-bar-top{
+    width: 90%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+.nav-search-bar-top .nav-search-icon-top{
+   width: 55px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 0 0 5px;
+}
+
+.nav-search-bar-top .nav-search-icon-top i{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-h-p-two-name .nav-h-h-name{
+    font-size: var(--para-small-font);
+    color: var(--secondry-color);
+    font-weight: bold;
+}
+
+.nav-h-p-two-name .nav-h-p-name span{
+    font-size: var(--para-very-small-font);
+    color: var(--icon-para-color);
+    font-weight: bold;
+}
+
+.nav-search-bar-child .nav-hide-filter-btn{
+    padding: 0 0 0 15px;
+    text-decoration: none;
+}
+
+.nav-search-bar-child .nav-hide-filter-btn i{
+    padding: 14px;
+    border-radius: 50%;
+    font-size: var(--large-p-font);
+    font-weight: bold;
+    border: 1px solid var(--icon-para-color);
+    cursor: pointer;
+}
+
+
+
 /* hide section login and sign up section
 ==========================================*/
 

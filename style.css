@@ -18,6 +18,7 @@ html {
     --large-p-font: 18px;
     --para-font: 16px;
     --para-small-font: 14px;
+    --para-very-small-font: 12px;
     --white-f: #fff;
     --hover-first-color: #f7f6f2;
 }
@@ -64,7 +65,6 @@ html {
     color: var(--secondry-color);
     border-right: 1px solid var(--primary-color);
     padding: 0 14px;
-    text-overflow: ellipsis;
 }
 
 .add-guest-btn {
@@ -185,15 +185,6 @@ html {
     border-radius: 13px;
 }
 
-.icon-container .icon {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 50px;
-    display: flex;
-    align-items: center;
-}
-
 .icon-container .all-link-btns {
     width: 100%;
     display: flex;
@@ -264,6 +255,15 @@ html {
 .active,
 .link-btn:hover .btn-line {
     opacity: 1;
+}
+
+.icon-container .icon {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .icon:first-child {
@@ -419,6 +419,7 @@ html {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    white-space: nowrap;
     border-radius: 10px;
 }
 
@@ -486,6 +487,9 @@ html {
     font-size: var(--para-font);
     color: var(--secondry-color);
     font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 90%;
 }
 
 .card .card-content span {

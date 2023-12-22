@@ -234,20 +234,6 @@ var splide = new Splide( '#splide_a23' ,{
 });
 splide.mount();
 
-var splide = new Splide( '#splide_a24' ,{
-  pagination: false,
-});
-splide.mount();
-
-var splide = new Splide( '#splide_a25' ,{
-  pagination: false,
-});
-splide.mount();
-
-var splide = new Splide( '#splide_a26' ,{
-  pagination: false,
-});
-splide.mount();
 
 
 
@@ -286,6 +272,86 @@ var splide = new Splide( '#splide_b6',{
 splide.mount();
 
 var splide = new Splide( '#splide_b7',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b8',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b9',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b10',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b11',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b12',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b13',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b14',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b15',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b16',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b17',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b18',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b19',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b20',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b21',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b22',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_b23',{
   pagination: false,
 });
 splide.mount();

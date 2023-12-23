@@ -40,17 +40,17 @@ const handleIcons = (scrollVal) => {
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
         // if clicked icon is left, reduce 350 from buttonContainer scrollLeft else add
-        let scrollWidth = buttonContainer.scrollLeft += icon.id === "left" ? -340 : 340;
+        let scrollWidth = buttonContainer.scrollLeft += icon.id === "left" ? -160 : 160;
         handleIcons(scrollWidth);
     });
 });
 
-// allLinkButton.forEach(tab => {
-//     tab.addEventListener("click", () => {
-//         buttonContainer.querySelector(".active").classList.remove("active");
-//         tab.classList.add("active");
-//     });
-// });
+allLinkButton.forEach(tab => {
+    tab.addEventListener("click", () => {
+        buttonContainer.querySelector(".active").classList.remove("active");
+        tab.classList.add("active");
+    });
+});
 
 const dragging = (e) => {
     if(!isDragging) return;
@@ -590,7 +590,7 @@ const footerHandleIcons = (scrollVal) => {
 
 footerArrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
-        let scrollWidth = tabButtonContainer.scrollLeft += icon.id === "left-ar" ? -340 : 340;
+        let scrollWidth = tabButtonContainer.scrollLeft += icon.id === "left-ar" ? -100 : 100;
         footerHandleIcons(scrollWidth);
     });
 });

@@ -40,10 +40,14 @@
     .toggle-btn {
         display: none;
     }
-    .icon-container .icon  {
-        display: none;
+    .icon-container .icon{
+        width: 40px;
     }
-    
+    .icon i {
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+    }
 }
 
 @media (max-width:500px){
@@ -207,4 +211,11 @@
         display: none;
     }
     
+}
+
+@media (max-width: 340px){
+    .copyright-content li a .fa-brands{
+        font-size: 20px;
+        margin-left: 5px;
+    }
 }

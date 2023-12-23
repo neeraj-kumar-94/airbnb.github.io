@@ -22,6 +22,28 @@ lSignCross.onclick = function (){
   loginSignHideSec.style.display = "none";
 }
 
+window.onclick = function(event){
+  if(event.target == loginSignHideSec){
+    loginSignHideSec.style.display = "none";
+  }
+}
+
+let continueWeb = document.querySelectorAll(".compnay-icon-name-material .c-i-name");
+continueWeb.onclick = function(){
+  loginSignHideSec.style.display = "none";
+}
+
+
+// form login and signup section 
+// ================================
+
+let select = document.getElementById("select-country");
+let inputPhone = document.getElementById("phone");
+
+inputPhone.addEventListener("click", function() {
+  let select = document.getElementById("select-country").value;
+  let inputPhone = document.getElementById("phone").value = select;
+})
 
 // top link buttons
 // =-=-=-=-=-=-=-=-=-=-=
@@ -45,12 +67,12 @@ arrowIcons.forEach(icon => {
     });
 });
 
-allLinkButton.forEach(tab => {
-    tab.addEventListener("click", () => {
-        buttonContainer.querySelector(".active").classList.remove("active");
-        tab.classList.add("active");
-    });
-});
+// allLinkButton.forEach(tab => {
+//     tab.addEventListener("click", () => {
+//         buttonContainer.querySelector(".active").classList.remove("active");
+//         tab.classList.add("active");
+//     });
+// });
 
 const dragging = (e) => {
     if(!isDragging) return;

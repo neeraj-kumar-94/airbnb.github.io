@@ -17,12 +17,12 @@
     <script src="https://kit.fontawesome.com/cd7b12aee3.js" crossorigin="anonymous"></script>
     <!-- Font Awesome CDN Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <!-- link css file -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- link css main file -->
+    <link rel="stylesheet" href="./css_files/style.css" />
     <!-- link hide content css file -->
-    <link rel="stylesheet" href="hide_section.css" />
+    <link rel="stylesheet" href="./css_files/hide_section.css" />
     <!-- link Responsive css file -->
-    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="./css_files/responsive.css" />
     <title>Airbnb</title>
 </head>
 
@@ -49,6 +49,7 @@
                 <div class="user-humburger-icon">
                     <i class="humb-icon fa-solid fa-bars"></i>
                     <i class="user-icon fa-solid fa-circle-user"></i>
+                    <!-- login and signup short popup section  -->
                     <div class="login-signup-hc-etc">
                         <div class="winter-r-n">
                             <a href="#">Winter Release Features <span>NEW</span></a>
@@ -100,6 +101,43 @@
                         <div class="l-s-name">
                             <span>Log in or sign up</span>
                         </div>
+                    </div>
+                    <div class="l-s-heading">
+                        <h3>Welcome to Airbnb</h3>
+                    </div>
+                    <div class="phone-number-form">
+                        <form autocomplete="off">
+                            <div class="slect-country-ph">
+                                <select name="phoneNumber" id="select-country">
+                                    <option value="+93 ">Afghanistan (+93)</option>
+                                    <option value="+213 ">Algeria (+213)</option>
+                                    <option value="+1 ">American Samoa (+1)</option>
+                                    <option value="+376 ">Andorra (+376)</option>
+                                    <option value="+61 ">Anguilla (+1)</option>
+                                    <option value="+297 ">Australia (+61)</option>
+                                    <option value="+994 ">Azerbaijan (+994)</option>
+                                    <option value="+1 ">Bahamas (+1)</option>
+                                    <option value="+973 ">Bahrain (+973)</option>
+                                    <option value="+880 ">Bangladesh (+880)</option>
+                                    <option value="+32 ">Belgium (+32)</option>
+                                    <option value="+267 ">Botswana (+267)</option>
+                                    <option value="+1 ">British Virgin Islands (+1)</option>
+                                    <option value="+359 ">Bulgaria (+359)</option>
+                                </select>
+                            </div>
+                            <div class="phone-number-input">
+                                <label for="phone"></label>
+                                <input type="tel" name="phone Number" id="phone" required autocomplete="off" minlength="9" >
+                            </div>
+                            <div class="form-small-text">
+                                <p>We’ll call or text you to confirm your number. Standard message and data rates apply.
+                                    <a href="#">Privacy Policy</a>
+                                </p>
+                            </div>
+                            <div class="form-continue-btn">
+                                <button>Continue</button>
+                            </div>
+                        </form>
                     </div>
                     <div class="or-section">
                         <div class="or-sec-line"></div>

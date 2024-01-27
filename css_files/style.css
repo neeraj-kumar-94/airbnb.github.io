@@ -827,3 +827,35 @@ html {
     margin-left: 10px;
 }
 
+/* =================
+scroll top button
+==================== */
+
+.to-top{
+    position: fixed;
+    bottom: 16px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: var(--white-f);
+    background-color: var(--secondry-color);
+    transition: var(--transition-pro);
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.to-top i{
+    color: var(--white-f);
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}

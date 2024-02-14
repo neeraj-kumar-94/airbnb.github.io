@@ -5,18 +5,22 @@
     font-family: 'DM Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 
 /* hide search bar width below 780px 
 ======================================*/
 
-.nav-search-bar-container{
+.nav-search-bar-container {
     width: 100%;
     height: 54px;
     display: none;
 }
 
-.nav-search-bar-container .nav-search-bar-child{
+.nav-search-bar-container .nav-search-bar-child {
     width: 100%;
     height: 54px;
     display: flex;
@@ -24,7 +28,7 @@
     align-items: center;
 }
 
-.nav-search-bar-child .nav-search-bar-top{
+.nav-search-bar-child .nav-search-bar-top {
     width: 90%;
     height: 54px;
     display: flex;
@@ -33,39 +37,39 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     text-decoration: none;
     cursor: pointer;
-} 
-
-.nav-search-bar-top .nav-search-icon-top{
-   width: 55px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin: 0 0 0 5px;
 }
 
-.nav-search-bar-top .nav-search-icon-top i{
+.nav-search-bar-top .nav-search-icon-top {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 5px;
+}
+
+.nav-search-bar-top .nav-search-icon-top i {
     font-size: 20px;
     font-weight: bold;
 }
 
-.nav-h-p-two-name .nav-h-h-name{
+.nav-h-p-two-name .nav-h-h-name {
     font-size: var(--para-small-font);
     color: var(--secondry-color);
     font-weight: bold;
 }
 
-.nav-h-p-two-name .nav-h-p-name span{
+.nav-h-p-two-name .nav-h-p-name span {
     font-size: var(--para-very-small-font);
     color: var(--icon-para-color);
     font-weight: bold;
 }
 
-.nav-search-bar-child .nav-hide-filter-btn{
+.nav-search-bar-child .nav-hide-filter-btn {
     padding: 0 0 0 15px;
     text-decoration: none;
 }
 
-.nav-search-bar-child .nav-hide-filter-btn i{
+.nav-search-bar-child .nav-hide-filter-btn i {
     padding: 14px;
     border-radius: 50%;
     font-size: var(--large-p-font);
@@ -79,7 +83,7 @@
 /* hide section login and sign up section
 ==========================================*/
 
-.login-signup-hc-etc{
+.login-signup-hc-etc {
     position: absolute;
     top: 70px;
     right: 100px;
@@ -97,7 +101,7 @@
 }
 
 
-.winter-r-n{
+.winter-r-n {
     width: 100%;
     height: 60px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
@@ -115,11 +119,11 @@
     cursor: pointer;
 }
 
-.winter-r-n a:hover{
+.winter-r-n a:hover {
     background-color: var(--hover-first-color);
 }
 
-.winter-r-n a span{
+.winter-r-n a span {
     font-size: 12px;
     background-color: #ff385c;
     color: var(--white-f);
@@ -128,7 +132,7 @@
     border-radius: 5px;
 }
 
-.l-s-btn{
+.l-s-btn {
     width: 100%;
     height: 100px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
@@ -138,7 +142,8 @@
     flex-direction: column;
 }
 
-.l-s-btn .login-btn, .l-s-btn .signup-btn{
+.l-s-btn .login-btn,
+.l-s-btn .signup-btn {
     width: 100%;
     height: auto;
     font-size: var(--para-small-font);
@@ -151,14 +156,15 @@
     text-align: start;
 }
 
-.l-s-btn .login-btn:hover{
-    background-color: var(--hover-first-color);
-}
-.l-s-btn .signup-btn:hover{
+.l-s-btn .login-btn:hover {
     background-color: var(--hover-first-color);
 }
 
-.airbn-home-help-c{
+.l-s-btn .signup-btn:hover {
+    background-color: var(--hover-first-color);
+}
+
+.airbn-home-help-c {
     width: 100%;
     height: 100px;
     display: flex;
@@ -167,7 +173,7 @@
     flex-direction: column;
 }
 
-.airbn-home-help-c a{
+.airbn-home-help-c a {
     width: 100%;
     height: auto;
     font-size: var(--para-small-font);
@@ -181,7 +187,7 @@
     text-decoration: none;
 }
 
-.airbn-home-help-c a:hover{
+.airbn-home-help-c a:hover {
     background-color: var(--hover-first-color);
 }
 
@@ -215,22 +221,22 @@
 }
 
 
-.container-material-form-web{
+.container-material-form-web {
     width: 90%;
     height: 90%;
 }
 
-.l-s-heading{
+.l-s-heading {
     padding: 30px 0 20px 0;
 }
 
-.l-s-heading h3{
+.l-s-heading h3 {
     font-size: var(--heading-font);
     font-weight: bold;
     color: var(--secondry-color);
 }
 
-.phone-number-form form{
+.phone-number-form form {
     width: 100%;
     padding: 20px 0;
 }
@@ -241,11 +247,11 @@
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid var(--secondry-color);
-    border-radius:10px 10px 0 0 ;
+    border-radius: 10px 10px 0 0;
     border-bottom: none;
 }
 
-.phone-number-form form .slect-country-ph select{
+.phone-number-form form .slect-country-ph select {
     width: 100%;
     height: 100%;
     border: none;
@@ -256,7 +262,7 @@
     padding: 0 10px;
 }
 
-.phone-number-form form .phone-number-input{
+.phone-number-form form .phone-number-input {
     width: 100%;
     height: 48px;
     margin: 0 0 10px 0;
@@ -265,7 +271,7 @@
     overflow: hidden;
 }
 
-.phone-number-form form .phone-number-input input{
+.phone-number-form form .phone-number-input input {
     width: 100%;
     height: 100%;
     font-size: var(--para-font);
@@ -275,20 +281,20 @@
     outline: none;
 }
 
-.phone-number-form form .form-small-text p{ 
+.phone-number-form form .form-small-text p {
     font-size: var(--para-small-font);
     font-weight: normal;
     color: var(--secondry-color);
     padding: 0 0 10px 0;
 }
 
-.phone-number-form form .form-small-text p a{
+.phone-number-form form .form-small-text p a {
     color: var(--secondry-color);
     line-height: var(--para-font);
-    
+
 }
 
-.phone-number-form form .form-continue-btn{
+.phone-number-form form .form-continue-btn {
     width: 100%;
     height: 48px;
     overflow: hidden;
@@ -296,7 +302,7 @@
     margin: 20px 0 0 0;
 }
 
-.phone-number-form form .form-continue-btn button{
+.phone-number-form form .form-continue-btn button {
     width: 100%;
     height: 100%;
     border: none;
@@ -307,7 +313,7 @@
     color: var(--white-f);
 }
 
-.form-web-content .login-cross-icons{
+.form-web-content .login-cross-icons {
     width: 100%;
     height: 64px;
     display: flex;
@@ -317,15 +323,15 @@
     border-bottom: 1px solid var(--primary-color);
 }
 
-.login-cross-icons .l-s-cross-icon{
+.login-cross-icons .l-s-cross-icon {
     position: absolute;
     top: 50%;
     left: 30px;
     transform: translateY(-50%);
-    
+
 }
 
-.login-cross-icons .l-s-cross-icon i{
+.login-cross-icons .l-s-cross-icon i {
     font-size: 20px;
     padding: 4px 8px;
     border-radius: 50%;
@@ -334,17 +340,17 @@
     user-select: none;
 }
 
-.login-cross-icons .l-s-cross-icon i:hover{
+.login-cross-icons .l-s-cross-icon i:hover {
     background-color: var(--hover-first-color);
 }
 
-.login-cross-icons .l-s-name span{
+.login-cross-icons .l-s-name span {
     font-size: var(--large-p-font);
     color: var(--secondry-color);
     font-weight: bold;
 }
 
-.or-section{
+.or-section {
     width: 100%;
     height: auto;
     display: flex;
@@ -353,7 +359,7 @@
     margin: 16px 0;
 }
 
-.or-section .or-sec-line{
+.or-section .or-sec-line {
     width: 44%;
     height: 1px;
     background-color: var(--primary-color);
@@ -369,7 +375,7 @@
     transition: var(--transition-pro);
 }
 
-.compnay-icon-name-material:hover{
+.compnay-icon-name-material:hover {
     background-color: var(--hover-first-color);
 }
 
@@ -385,7 +391,7 @@
     font-weight: bold;
 }
 
-.compnay-icon-name-material .c-i-name .l-s-c-icon{
+.compnay-icon-name-material .c-i-name .l-s-c-icon {
     position: absolute;
     top: 50%;
     left: 30px;
@@ -402,4 +408,64 @@
     width: 20px;
     height: 20px;
     background-color: transparent;
+}
+
+
+/* bottom login section
+======================== */
+
+.b-lo-sec {
+    display: none;
+    opacity: 0;
+}
+
+.b-lo-sec.active{
+    opacity: 1;
+}
+
+.b-lo-sec {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background-color: var(--white-f);
+}
+
+.b-lo-sec .b-lo-child-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b-lo-sec .b-lo-child-sec .b-lo-child-sec-material {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.b-lo-child-sec-material .b-l-s {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    white-space: nowrap;
+    padding: 15px 0;
+    margin: 0 15px;
+}
+
+.b-lo-child-sec-material .b-l-s:hover .b-l-content p{
+   color: #E81948;
+}
+
+.b-l-content p {
+    font-weight: normal;
+    font-size: var(--para-small-font);
+    color: var(--icon-para-color);
+}
+
+.b-l-content p .active{
+    color: #E81948;;
 }

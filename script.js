@@ -1817,6 +1817,244 @@ var splide = new Splide( '#splide_n23',{
 });
 splide.mount();
 
+// =======================
+// O Cards slider 
+// =======================
+
+var splide = new Splide( '#splide_o1',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o2',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o3',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o4',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o5',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o6',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o7',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o8',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o9',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o10',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o11',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o12',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o13',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o14',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o15',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o16',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o17',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o18',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o19',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o20',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o21',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o22',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_o23',{
+  pagination: false,
+});
+splide.mount();
+
+
+// =======================
+// P Cards slider 
+// =======================
+
+var splide = new Splide( '#splide_p1',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p2',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p3',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p4',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p5',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p6',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p7',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p8',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p9',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p10',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p11',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p12',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p13',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p14',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p15',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p16',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p17',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p18',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p19',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p20',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p21',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p22',{
+  pagination: false,
+});
+splide.mount();
+
+var splide = new Splide( '#splide_p23',{
+  pagination: false,
+});
+splide.mount();
 
 
 // =======================
@@ -2049,3 +2287,31 @@ window.addEventListener("scroll", () => {
     toTop.classList.remove("active");
   }
 })
+
+//bottom login signup button
+// =========================
+
+let loginBottomBtn = document.querySelector("#b-l-btn");
+let wishlistLoginBtn = document.querySelector("#wis-l-btn");
+
+loginBottomBtn.onclick = function (){
+  loginSignHideSec.style.display = "block";
+}
+
+wishlistLoginBtn.onclick = function (){
+  loginSignHideSec.style.display = "block";
+}
+
+
+// scroll hide
+
+const LoginBtmSec = document.querySelector(".b-lo-sec");
+
+window.addEventListener("scroll", () => {
+  if(window.pageYOffset < 100){
+      LoginBtmSec.classList.add("active");
+  }else{
+    LoginBtmSec.classList.remove("active");
+  }
+})
+

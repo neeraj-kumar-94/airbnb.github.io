@@ -9,7 +9,7 @@
 
 /* Navbar display none 780px  
 =============================*/
-@media (max-width:780px){
+@media (max-width:780px) {
     .navbar {
         width: 100%;
         height: 80px;
@@ -19,41 +19,54 @@
         border-bottom: 0px;
         padding: 0 5%;
     }
-    .multiple-icon-btn-contaner{
-        box-shadow: 0px 15px 10px -15px #111;  
+
+    .multiple-icon-btn-contaner {
+        box-shadow: 0px 15px 10px -15px #111;
     }
 
-    .nav-search-bar-container{
+    .nav-search-bar-container {
         display: block;
     }
-    
-    .multiple-icon-btn-child{
+
+    .multiple-icon-btn-child {
         width: 92%;
     }
+
     .nav-material {
         display: none;
     }
+
     /* filter and toggle button display none */
-    .filter-btn{
+    .filter-btn {
         display: none;
     }
+
     .toggle-btn {
         display: none;
     }
-    .icon-container .icon{
+
+    .icon-container .icon {
         width: 40px;
     }
+
     .icon i {
         width: 30px;
         height: 30px;
         line-height: 28px;
     }
+    /* // bottom login section
+    ============================*/
+    .b-lo-sec {
+        display: block;
+    }
+
 }
 
-@media (max-width:500px){
-    .icon-container{
-       height: 74px;
+@media (max-width:500px) {
+    .icon-container {
+        height: 74px;
     }
+
     .icon-container .all-link-btns {
         gap: 25px;
         margin-top: 1px;
@@ -70,18 +83,18 @@
 }
 
 @media (max-width: 950px) {
-    .airbnb-logo{
-       position: relative;
+    .airbnb-logo {
+        position: relative;
     }
-    
+
     .nav-three-btn {
-       position: absolute;
-       left: 0;
+        position: absolute;
+        left: 0;
     }
 }
 
-@media (max-width: 780px){
-    .nav-three-btn{
+@media (max-width: 780px) {
+    .nav-three-btn {
         width: auto;
         margin-right: 10px;
     }
@@ -95,11 +108,11 @@
 
 /* Responsive login and signup section
 ====================================== */
-@media(max-width: 570px){
+@media(max-width: 570px) {
     .login-signup-child-sec {
-    width: 100%;
-    height: 100vh;
-}
+        width: 100%;
+        height: 100vh;
+    }
 }
 
 
@@ -110,6 +123,7 @@
     .inner-cards-container {
         grid-template-columns: repeat(5, 1fr);
     }
+    
 }
 
 @media (max-width: 1640px) {
@@ -155,14 +169,14 @@
     }
 }
 
-@media (max-width: 840px){
-    .footer-tab-btns{
+@media (max-width: 840px) {
+    .footer-tab-btns {
         width: 95%;
         height: 100%;
     }
-    
-    
-    .footer-tab-btns-parent .f-icon:last-child{
+
+
+    .footer-tab-btns-parent .f-icon:last-child {
         display: block;
     }
 }
@@ -202,7 +216,7 @@
         padding: 24px 0;
     }
 
-    .copyright-content{
+    .copyright-content {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -210,22 +224,23 @@
         padding: 20px 0 0 0;
     }
 
-    .copyright-content #copy-right-2023{
+    .copyright-content #copy-right-2023 {
         display: block;
         width: 100%;
         text-align: center;
         padding: 0 0 10px 0;
     }
 
-    .copyright-content .f-hide-decimal{
+    .copyright-content .f-hide-decimal {
         display: none;
     }
-    
+
 }
 
-@media (max-width: 340px){
-    .copyright-content li a .fa-brands{
+@media (max-width: 340px) {
+    .copyright-content li a .fa-brands {
         font-size: 20px;
         margin-left: 0px;
     }
 }
+
